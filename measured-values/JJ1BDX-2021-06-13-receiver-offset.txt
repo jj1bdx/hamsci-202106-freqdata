@@ -1,0 +1,16 @@
+Notes on frequency result measurement offset
+Kenji Rikitake, JJ1BDX
+13-JUN-2021
+
+After the June 2021 Eclipse Festival, I've measured the reception frequency
+offset of Airspy HF+ Discovery for the measurement set to 9999kHz USB with Leo
+Bodnar Mini GPSDO set to 25MHz and airspy-fmradion 20210427-0 offset
+measurement function of FM broadcasting. My experience suggests that the clock
+frequency of Airspy HF+ Discovery has a negative coefficient to the
+environmental temperature, and the offset range will drift up to +-0.2ppm.
+
+After running the experiment for 30 minutes from 0015UTC to 0045UTC
+13-JUN-2021, the frequency offset of the Airspy HF+ Discovery clock was
+measured was -0.083ppm from the GPSDO reference.  This result suggests that
+the audio frequency of JJ1BDX's 9999kHz reception results was actually shifted
+0.83Hz up, i.e., true 1000Hz sound was measured as 1000.83Hz.
